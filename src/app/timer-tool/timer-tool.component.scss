@@ -1,0 +1,95 @@
+.timer-tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    ;
+  
+    .digital-time {
+      display: flex;
+      font-size: 2em;
+      margin-bottom: 10px;
+  
+      div {
+        margin: 0 5px;
+      }
+  
+      div:nth-child(2) {
+        font-weight: bold;
+      }
+    }
+  
+    .buttons {
+      display: flex;
+      gap: 10px;
+  
+      button {
+        padding: 10px;
+        font-size: 1em;
+        cursor: pointer;
+        
+        border: none;
+        border-radius: 5px;
+  
+        
+      }
+    }
+  }
+
+.btn-start {
+    background-color: #4caf50;
+    color: #fff;
+
+    &:hover {
+        background-color: #52e059;
+      }
+
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+}
+.btn-reset {
+    background-color: rgb(225, 225, 22);
+    color: #fff;
+
+    &:hover {
+        background-color: #d6fa09;
+      }
+
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+}
+
+.btn-pause {
+    background-color: #d33328;
+    color: #fff;
+
+    &:hover {
+        background-color: #ea5a5a;
+      }
+
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+}
+
+.btn-resume {
+    background-color: #1122de;
+    color: #fff;
+
+    &:hover {
+        background-color: #517ede;
+      }
+
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+}
+  

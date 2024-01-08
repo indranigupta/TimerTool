@@ -1,0 +1,14 @@
+<div class="timer-tool">
+    <div class="digital-time">
+      <div>{{ minute | number: '2.0-0' }}</div>
+      <div>:</div>
+      <div>{{ second | number: '2.0-0' }}</div>
+    </div>
+    <div class="buttons">
+      <button class="btn-start" (click)="startTimer()" [disabled]="!isPaused">Start</button>
+      <button class="btn-reset" (click)="resetTimer()">Reset</button>
+      <button class="btn-pause" (click)="pauseTimer()" [disabled]="isPaused">Pause</button>
+      <button class="btn-resume" (click)="resumeTimer()" [disabled]="!isPaused">Resume</button>
+    </div>
+  </div>
+  
